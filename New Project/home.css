@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --primary: rgb(1, 117, 163);
+    --secondary: rgb(9, 0, 32)
+
+}
+body{
+    background-color: var(--secondary);
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 5px solid var(--primary);
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondary);
+}
+.logo{
+    color: white;
+    font-size: 12px;
+}
+.logo span{
+    color: var(--primary);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 30%;
+}
+nav .ul1, nav .ul2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+}
+.movies, .tvseries{
+    overflow: hidden;
+}
+.movies-content, .tvseries-content{
+    display: none;
+    position: absolute;
+}
+.movies-content a, .tvseries-content a{
+    float: none;
+    padding: 10px;
+    text-align: left;
+    color: white!important;
+    background-color: rgb(67, 139, 197);
+    z-index: 1;
+}
+.movies-content a:hover, .tvseries-content a:hover{
+    transform: scale(1.2);
+}
+nav .ul1 li, nav .ul2 li{
+    list-style: none;
+}
+nav .ul1 li a, nav .ul2 li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+nav .ul1 li a:hover, nav .ul2 li a:hover{
+    color: rgb(67, 139, 197);
+}
+.movies:hover .movies-content, .tvseries:hover .tvseries-content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 5px;
+}
+
+.content1 .img-side{
+    background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/thewitcher.jpeg);
+    width: 75%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes anime{
+    0%{
+        background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/wednesday.jpeg);
+        width: 75%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+    33%{
+        background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/you.jpeg);
+        width: 75%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+    66%{
+        background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/lol.jpeg);
+        width: 75%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        } 
+    100%{
+        background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/thewitcher.jpeg);
+        width: 75%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        } 
+    }
+.content1 .top10{
+    background-color: var(--primary);
+    width: 25%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.content1 .top10 h2{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary);
+    padding: 5px;
+}
+.content1 .top10 li{
+    padding: 12px;
+    color: white;
+    border-bottom: 2px dotted var(--secondary);
+}
+.content1 .top10 li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.content1 .top10 li:hover, .content1 .top10 li a:hover{
+    transform: scaleY(1.3);
+    color: var(--secondary);
+}
+.content2, .content3, .content4{
+    margin: 50px 10px;
+    overflow-x: scroll;
+}
+.content2::-webkit-scrollbar, .content3::-webkit-scrollbar, .content4::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+.content2::-webkit-scrollbar-track, .content3::-webkit-scrollbar-track, .content4::-webkit-scrollbar-track {
+    background: var(--secondary);
+  }
+  
+.content2::-webkit-scrollbar-thumb, .content3::-webkit-scrollbar-thumb, .content4::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+.content2 h2, .content3 h2, .content4 h2{
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+.img{
+    width: 200%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    
+}
+.content2 .img1{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ sandman.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content2 .img2{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ night\ agent.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content2 .img3{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ queens\ gambit.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content2 .img4{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/far\ from\ home.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content2 .img5{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/castle\ &\ castle.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content3 .img1{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/alice\ in\ borderland.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content3 .img2{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/dark\ october.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content3 .img3{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/far\ from\ home.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content3 .img4{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/manifest.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content3 .img5{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ trade.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content4 .img1{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/shadow\ and\ bone.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content4 .img2{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ wheel\ of\ time.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content4 .img3{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ trade.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content4 .img4{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/warrior\ nun.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.content4 .img5{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/tmc.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+#footer{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    width: 100%;
+    height: 200px;
+}
+#footer h3{
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+}
+#footer .link li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
+#footer .link li:hover{
+    transform: scale(1.2);
+}
+#footer .link li a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+#footer .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#footer .icon{
+    background-color: var(--secondary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--primary);
+    font-size: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .updates input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid var(--secondary);
+    background-color: transparent;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+#footer .updates input::placeholder{
+    color: var(--secondary);
+    font-size: 20px;
+}
+button{
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    margin-top: 20px;
+    border: none;
+}
