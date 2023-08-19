@@ -71,6 +71,17 @@ nav .ul1 li a, nav .ul2 li a{
 nav .ul1 li a:hover, nav .ul2 li a:hover{
     color: rgb(67, 139, 197);
 }
+.navbar .ul2 .dp{
+    display: flex;
+    gap: 5px;
+}
+.navbar .ul2 .img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(img/IMG_4356.JPG);
+    background-size: cover;
+}
 .movies:hover .movies-content, .tvseries:hover .tvseries-content {
     display: block;
     display: flex;
@@ -378,4 +389,8 @@ button{
     color: var(--primary);
     margin-top: 20px;
     border: none;
+}
+button:hover{
+    color: white;
+    cursor: pointer;
 }

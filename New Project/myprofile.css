@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --primary: rgb(1, 117, 163);
+    --secondary: rgb(9, 0, 32)
+}
+body{
+    background-color: var(--secondary);
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--primary);
+    height: 50px;
+    padding: 0px 10px;
+}
+.logo span{
+    color: var(--primary)!important;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.logo a:hover{
+    text-decoration-line: underline;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin: 20px;
+}
+nav ul li{
+    float: left;
+    padding-left: 50px;
+    list-style: none;
+}
+nav ul li a{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    text-transform: uppercase;
+}
+.navbar input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid var(--primary);
+    background-color: transparent;
+    font-size: 15px;
+    color: var(--primary);
+    outline: none;
+    padding-left: 20px;
+}
+.navbar input::placeholder{
+    color: var(--primary);
+}
+.cover-dp{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 5px solid var(--primary);
+}
+.dp{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    background-image: url(img/IMG_4356.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -150px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary);
+    position: absolute;
+    width: 100%;
+    bottom: 00px;
+    gap: 130px;
+    color: var(--primary);
+}
+.name .bio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 10px;
+    bottom: 0px;
+}
+.name .genre, .suggest, .settings{
+    position: relative;
+    bottom: 50px;
+    font-size: 20px;
+}
+.name li{
+    list-style: none;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.name .genre p, .suggest p{
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+}
+.name a{
+    text-decoration: none;
+    color: rgb(214, 206, 206); 
+}
+.name a:hover{
+    text-decoration: underline;
+    color: var(--primary);
+}
+/* .name h2{
+    font-size: 30px;
+    
+    position: absolute;
+    bottom: 120px;
+}
+.name .p1{
+    font-size: 20px;
+    color: var(--primary);
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    display: inline-block;
+}
+.name .p2{
+    font-size: 20px;
+    color: var(--primary);
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    display: inline-block;
+} */
