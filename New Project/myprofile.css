@@ -83,7 +83,7 @@ nav ul li a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    top: -150px;
+    bottom: 150px;
 }
 .name{
     display: flex;
