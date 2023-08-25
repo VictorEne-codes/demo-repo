@@ -88,6 +88,46 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     display: flex;
     flex-direction: column;
 }
+@media (max-width: 750px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column wrap;
+        padding: 10px 0px;
+        border-bottom: 5px solid var(--primary);
+        position: fixed;
+        width: 100%;
+        background-color: var(--secondary);
+    }
+    .logo{
+        color: white;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+    }
+    nav .ul1{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 10px;
+        gap: 10px;
+        color: white;
+    }
+    nav .ul2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    .movies, .tvseries{
+        overflow: hidden;
+    }
+}
 .content1 {
     display: flex;
     justify-content: space-between;
@@ -171,6 +211,72 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     transform: scaleY(1.3);
     color: var(--secondary);
 }
+@media (max-width: 750px){
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column wrap;
+        padding-top: 50px;
+        gap: 5px;
+    }
+    
+    .content1 .img-side{
+        background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/thewitcher.jpeg);
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        animation-name: anime;
+        animation-duration: 10s;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes anime{
+        0%{
+            background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/wednesday.jpeg);
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            }
+        33%{
+            background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/you.jpeg);
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            }
+        66%{
+            background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/lol.jpeg);
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            } 
+        100%{
+            background-image: linear-gradient(to top, rgba(0, 0, 0,0.5)50%, rgba(0, 0, 0,0.5)50%), url(img/thewitcher.jpeg);
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            } 
+        }
+    .content1 .top10{
+        background-color: var(--primary);
+        width: 100%;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+}
 .content2, .content3, .content4{
     margin: 50px 10px;
     overflow-x: scroll;
@@ -241,6 +347,70 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     margin-top: 30px;
     border-radius: 20px;
 }
+@media (max-width: 750px){
+    .content2, .content3, .content4{
+        margin: 30px 10px;
+        overflow-x: scroll;
+    }
+    .content2 h2, .content3 h2, .content4 h2{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        padding-left: 20px;
+    }
+    .img{
+        width: 500%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        
+    }
+    .content2 .img1{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ sandman.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content2 .img2{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ night\ agent.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content2 .img3{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ queens\ gambit.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        border-radius: 20px;
+    }
+    .content2 .img4{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/far\ from\ home.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content2 .img5{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/castle\ &\ castle.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+}
 .content3 .img1{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/alice\ in\ borderland.jpeg);
     background-size: cover;
@@ -281,6 +451,53 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     margin-top: 30px;
     border-radius: 20px;
 }
+@media (max-width: 750px) {
+    .content3 .img1{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/alice\ in\ borderland.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content3 .img2{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/dark\ october.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content3 .img3{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/far\ from\ home.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content3 .img4{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/manifest.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content3 .img5{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ trade.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }    
+}
 .content4 .img1{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/shadow\ and\ bone.jpeg);
     background-size: cover;
@@ -320,6 +537,56 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     width: 500px;
     margin-top: 30px;
     border-radius: 20px;
+}
+@media (max-width: 750px){
+    .content4 h2{
+        font-size: 1rem;
+    }
+    .content4 .img1{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/shadow\ and\ bone.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content4 .img2{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ wheel\ of\ time.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content4 .img3{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/the\ trade.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content4 .img4{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/warrior\ nun.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .content4 .img5{
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/tmc.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 3000px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
 }
 #footer{
     background-color: var(--primary);
@@ -394,4 +661,82 @@ button{
 button:hover{
     color: white;
     cursor: pointer;
+}
+@media (max-width: 750px){
+    #footer{
+        background-color: var(--primary);
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+        flex-flow: column wrap;
+        /* gap: 50px; */
+        width: 100%;
+        height: 200%;
+    }
+    #footer h3{
+        color: white;
+        font-size: 25px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding: 10px 0px;
+    }
+    #footer .link li{
+        list-style: none;
+        padding: 5px;
+        text-align: center;
+    }
+    #footer .link li:hover{
+        transform: scale(1.2);
+    }
+    #footer .link li a{
+        text-decoration: none;
+        color: var(--secondary);
+    }
+    #footer .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    #footer .icon{
+        background-color: var(--secondary);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: var(--primary);
+        font-size: 35px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .updates input{
+        width: 280px;
+        height: 50px;
+        border-radius: 10px;
+        outline: none;
+        font-size: 20px;
+        border: 2px solid var(--secondary);
+        background-color: transparent;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+    #footer .updates input::placeholder{
+        color: var(--secondary);
+        font-size: 20px;
+    }
+    button{
+        font-size: 20px;
+        font-weight: bold;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: var(--secondary);
+        color: var(--primary);
+        margin-top: 20px;
+        border: none;
+    }
+    button:hover{
+        color: white;
+        cursor: pointer;
+    }
 }
