@@ -88,6 +88,7 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     display: flex;
     flex-direction: column;
 }
+/* Responsive design for nav bar - 750px */
 @media (max-width: 750px){
     .navbar{
         display: flex;
@@ -211,6 +212,7 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     transform: scaleY(1.3);
     color: var(--secondary);
 }
+/* Responsive design for first content - 750px */
 @media (max-width: 750px){
     .content1 {
         display: flex;
