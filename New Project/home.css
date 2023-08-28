@@ -349,6 +349,7 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     margin-top: 30px;
     border-radius: 20px;
 }
+/* Resposive designs for images and scrolls - 750px */
 @media (max-width: 750px){
     .content2, .content3, .content4{
         margin: 30px 10px;
@@ -453,6 +454,7 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     margin-top: 30px;
     border-radius: 20px;
 }
+/* Responsive design */
 @media (max-width: 750px) {
     .content3 .img1{
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/alice\ in\ borderland.jpeg);
@@ -540,6 +542,7 @@ nav .ul1 li a:hover, nav .ul2 li a:hover{
     margin-top: 30px;
     border-radius: 20px;
 }
+/* Responsive design */
 @media (max-width: 750px){
     .content4 h2{
         font-size: 1rem;
@@ -664,6 +667,7 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+/* Incomplete responsive design for footer */
 @media (max-width: 750px){
     #footer{
         background-color: var(--primary);
