@@ -7,7 +7,6 @@
 :root{
     --primary: rgb(1, 117, 163);
     --secondary: rgb(9, 0, 32)
-
 }
 body{
     background-color: var(--secondary);
@@ -129,6 +128,7 @@ button{
     text-decoration: none;
     color: var(--primary);
 }
+/* Responsive design for 750px */
 @media (max-width: 750px){
     .form-side{
         width: 100vw;
@@ -178,6 +178,7 @@ button{
         color: var(--primary);
     }   
 }
+/* Responsive design for 350px */
 @media (max-width: 350px){
     .form-side{
         width: 100vw;
